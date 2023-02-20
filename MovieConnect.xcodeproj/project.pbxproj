@@ -85,6 +85,8 @@
 			dependencies = (
 			);
 			name = MovieConnect;
+			packageProductDependencies = (
+			);
 			productName = MovieConnect;
 			productReference = 8DF6CCFF29A3673A005A7A42 /* MovieConnect.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 8DF6CCF629A3673A005A7A42;
+			packageReferences = (
+				8D46C98229A38B4200431E17 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 8DF6CD0029A3673A005A7A42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,6 +362,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D46C98229A38B4200431E17 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8DF6CCF729A3673A005A7A42 /* Project object */;
 }
