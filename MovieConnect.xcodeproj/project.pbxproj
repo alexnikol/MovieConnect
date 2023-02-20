@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D46C98529A38BF600431E17 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8D46C98429A38BF600431E17 /* Kingfisher */; };
 		8DF6CD0329A3673A005A7A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6CD0229A3673A005A7A42 /* AppDelegate.swift */; };
 		8DF6CD0529A3673A005A7A42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6CD0429A3673A005A7A42 /* SceneDelegate.swift */; };
 		8DF6CD0C29A3673C005A7A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF6CD0B29A3673C005A7A42 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D46C98529A38BF600431E17 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 			);
 			name = MovieConnect;
 			packageProductDependencies = (
+				8D46C98429A38BF600431E17 /* Kingfisher */,
 			);
 			productName = MovieConnect;
 			productReference = 8DF6CCFF29A3673A005A7A42 /* MovieConnect.app */;
@@ -118,6 +121,7 @@
 			mainGroup = 8DF6CCF629A3673A005A7A42;
 			packageReferences = (
 				8D46C98229A38B4200431E17 /* XCRemoteSwiftPackageReference "Moya" */,
+				8D46C98329A38BF600431E17 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 8DF6CD0029A3673A005A7A42 /* Products */;
 			projectDirPath = "";
@@ -372,7 +376,23 @@
 				version = 15.0.0;
 			};
 		};
+		8D46C98329A38BF600431E17 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D46C98429A38BF600431E17 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D46C98329A38BF600431E17 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DF6CCF729A3673A005A7A42 /* Project object */;
 }
