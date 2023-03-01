@@ -1,6 +1,7 @@
 // Copyright © 2023 Almost Engineer. All rights reserved.
 
 import UIKit
+import SwiftUI
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -24,7 +25,25 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) {}
     
     private func makeRootController() -> UIViewController {
-        let vc = UIViewController()
+        let vc = UIHostingController(
+            rootView: TabView {
+                NavigationStack {
+                    MovieListView(viewModel: .init())
+                        .navigationTitle("Library")
+                        
+                }.tabItem {
+                    Label("Library", systemImage: "list.dash")
+                }
+                
+                NavigationStack {
+                    MovieListView(viewModel: .init())
+                        .navigationTitle("Search")
+                        
+                }.tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+            }
+        )
         return vc
     }
 }
